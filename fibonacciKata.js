@@ -8,7 +8,7 @@ let fibbFunct = (n) => {
             console.log(sum);
          console.log(`There are no numbers in the sequence.`);
     }
-    else if (n <= 1) {
+    else if (n === 1) {
         // console.log("here");
             sum = [0];
          console.log(sum);
@@ -32,24 +32,24 @@ let fibbFunct = (n) => {
          * */
         for (i = 2; sum.length < n; i++) {
             sum.push(( prev2Num + prevNum));
-            console.log(`this is sum after push: ${sum}`)
+            console.log(`this is sum after push: ${sum}`);
             prev2Num = sum[(i -1)];
-                console.log(`this is value at prev2num: ${prev2Num}`)
+                console.log(`this is value at prev2num: ${prev2Num}`);
             prevNum = sum[i];
-                console.log(`this is value at prevnum: ${prevNum}`)
+                console.log(`this is value at prevnum: ${prevNum}`);
             console.log(sum);    
         }
         // return sum
-    };
+    }
 
     return sum;
    
-};
+}
 
-// fibbFunct(4);
-// console.log(`\n`);
-// fibbFunct(7);
-// console.log(`\n`); 
+fibbFunct(4);
+console.log(`\n`);
+fibbFunct(7);
+console.log(`\n`); 
 fibbFunct(0);
 console.log(`\n`);
-fibbFunct(1);
+fibbFunct(2);
