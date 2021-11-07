@@ -1,19 +1,30 @@
-let fibbFunct = (n) => {
-    if (n <= 1) {
-        console.log("here");
-        return [10];
-    }
-    else if (n === 1) {
-        console.log("here2");
-        return [0, 1];
-    }
+//TODO: Refactor
 
+let fibbFunct = (n) => {
+    let sum;
+    if (n < 1) {
+        // console.log("here");
+            sum = [];
+            console.log(sum);
+         console.log(`There are no numbers in the sequence.`);
+    }
+    else if (n <= 1) {
+        // console.log("here");
+            sum = [0];
+         console.log(sum);
+    }
+    /**  else if (n === 2) {
+    *    console.log("here2");
+    *     sum = [0, 1];
+    *    console.log(sum);
+    *   }
+    */
     else {
         //sum last two values
-        console.log("here3");
+        // console.log("here3");
         let prev2Num = 0;
         let prevNum = 1;
-        let sum = [prev2Num, prevNum];
+             sum = [prev2Num, prevNum];
         console.log(sum);
         /**Shift previous numbers to variables prev2Num and prevNum
          * sum.length - 1 = prev2Num 
@@ -28,12 +39,17 @@ let fibbFunct = (n) => {
                 console.log(`this is value at prevnum: ${prevNum}`)
             console.log(sum);    
         }
-        return sum
+        // return sum
     };
 
+    return sum;
    
 };
 
-fibbFunct(4);
+// fibbFunct(4);
+// console.log(`\n`);
 // fibbFunct(7);
-// fibbFunct(1);
+// console.log(`\n`); 
+fibbFunct(0);
+console.log(`\n`);
+fibbFunct(1);
