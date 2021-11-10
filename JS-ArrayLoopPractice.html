@@ -1,0 +1,74 @@
+
+<!---TODO 
+-add button to display array elements onto DOM
+-configure JS to increment elements on click
+-Delete video source code
+------->
+<html>
+<head>
+</head>
+<body>
+<h1>Array Loop</h1>
+<p>/** Nested for loop
+    <br>
+    * Fist loop: iterates over the array<br>
+    * Second loop: iterates over the properties of the array<br>
+    * <br>
+    */<br></p>
+
+<br>
+    <button id='hiButton' 
+    style="color: chocolate,; background-color: grey;
+    width: 40px; height: 40px;">Hi</button>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YP9nrR-ym3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script>
+
+let array = [
+    {
+        x: 0,
+        y: 0,
+        z: 0
+    }
+]
+
+for (let i =0; i <= 5; i++) {
+        array.map((prop) => {
+            {this.prop = i}
+        })[0]}
+        // array[0] = [
+        //     {
+        //         x: i,
+        //         y: i,
+        //         z: i
+        //     }]}
+    for (j = 1; j <= 10; j++) {    
+        array[1] = [
+            {
+                a: j,
+                b: j,
+                c: j
+            }
+        ]
+    }
+
+window.onload = function() {
+
+// create a couple of elements in an otherwise empty HTML page
+const heading = document.createElement("h1");
+const heading_text = document.createTextNode(array[]);
+heading.appendChild(heading_text);
+document.body.appendChild(heading);
+}
+
+
+
+console.log(array) 
+
+
+</script>
+
+</body>
+</html>
+
